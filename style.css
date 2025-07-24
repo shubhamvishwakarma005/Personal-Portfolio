@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    /* height: ; */
+    background-color: black;
+    color: gray;
+}
+
+.hero {
+    width: 100vw;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+.logo {
+    width: 100px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s, box-shadow 0.3s;
+}
+
+.logo:hover {
+    border-color: white;
+    box-shadow: 0 0 8px 2px white;
+}
+
+
+
+#logo-img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.7s cubic-bezier(.32, .72, .28, 1.58);
+    transform-style: preserve-3d;
+}
+
+.logo:hover #logo-img {
+    transform: rotateY(360deg);
+}
+
+
+.info {
+    display: flex;
+    gap: 30px;
+    /* align-items: center; */
+
+}
+
+.info a {
+    font-size: 24px;
+    text-decoration: none;
+    color: gray;
+    display: inline-block;
+    transition:
+        color 0.3s,
+        transform 0.3s,
+        text-decoration 0.3s;
+}
+
+.info a:hover {
+    color: white;               
+    text-decoration: underline;  
+    transform: scale(1.15);      
+}
+
+.landing {
+    background-image: url("img/landing bgpic.jpg");
+    background-size: cover;         /* Scales image to cover element */
+    background-position: center;    /* Centers image */
+    background-repeat: no-repeat;   /* Prevents image from tiling */
+}
