@@ -7,25 +7,36 @@
 html,
 body {
     width: 100%;
-    /* height: ; */
+    height: 100%;
     background-color: black;
     color: gray;
 }
 
 .hero {
-    width: 100vw;
+    width: 100%;
+    height: 5000px;
+    padding-top: 150px;
 }
 
 .nav {
+    position: fixed;
+    left: 100px;
+    right: 100px;
+    top: 20px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px;
+    padding: 0 1rem;
+    z-index: 1000;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
 }
+
 
 .logo {
     width: 100px;
-    border: 2px solid gray;
     border-radius: 50%;
     position: relative;
     overflow: hidden;
@@ -60,6 +71,7 @@ body {
 
 .info a {
     font-size: 24px;
+    font-weight: 500;
     text-decoration: none;
     color: gray;
     display: inline-block;
@@ -70,14 +82,157 @@ body {
 }
 
 .info a:hover {
-    color: white;               
-    text-decoration: underline;  
-    transform: scale(1.15);      
+    color: white;
+    text-decoration: underline;
+    transform: scale(1.15);
 }
 
-.landing {
-    background-image: url("img/landing bgpic.jpg");
-    background-size: cover;         /* Scales image to cover element */
-    background-position: center;    /* Centers image */
-    background-repeat: no-repeat;   /* Prevents image from tiling */
+.landing { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content{
+    max-width: 800px;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    /* color: #00abf0; */
+}
+
+.home-content p{
+    font-size: 20px;
+    margin: 20px 0 40px;
+}
+
+.btn-box{
+    margin-top: 40px;
+}
+
+.btn-box button{
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.hire-me{
+    margin-right: 30px;
+} 
+
+/* porfile card */
+
+.pic-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 400px;
+    height: 560px;
+    margin: 150px 0px 0px 150px;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    padding: 25px;
+    position: relative;
+}
+
+.pic-frame::before{
+    content: " ";
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    background-color: #4070f4;
+    top: 0;
+    left: 0;
+    border-radius:  24px 24px 0 0;
+}
+
+.image{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: rgb(37, 34, 34);
+    margin-bottom: 10px;
+}
+
+.image .prof-img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    object-position: top;
+     border-radius: 50%;
+     border: 3px solid white;
+}
+
+.pic-frame .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+ .name{
+    font-size:28px;
+    font-weight: 500;
+}
+
+.text-data .job{
+     font-size:22px;
+    font-weight: 500;
+}
+
+.pic-frame .media{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+}
+
+.media .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    background-color: #4070f4;
+    height:34px;
+    width: 34px;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.pic-frame .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.buttons .connect{
+    color: white;
+    background-color: #4070f4;
+   font-size:14px ;
+   font-weight: 400;
+    margin: 0 10px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.buttons .connect:hover{
+    background-color: #0e4bf1;
 }
