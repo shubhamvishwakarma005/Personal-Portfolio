@@ -1,133 +1,134 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    color: gray;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: gray;
 }
 
 .hero {
-    width: 100%;
-    /* height: 5000px; */
-    padding-top: 150px;
+  width: 100%;
+  padding-top: 150px;
 }
 
 .nav {
-    position: fixed;
-    left: 100px;
-    right: 100px;
-    top: 20px;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
-    z-index: 1000;
+  position: fixed;
+  left: 100px;
+  right: 100px;
+  top: 20px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 1000;
 
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
 }
 
 
 .logo {
-    width: 100px;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    transition: border-color 0.2s, box-shadow 0.3s;
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.3s;
 }
 
 .logo:hover {
-    border-color: white;
-    box-shadow: 0 0 8px 2px white;
+  border-color: white;
+  box-shadow: 0 0 8px 2px white;
 }
 
 
 
 #logo-img {
-    width: 100%;
-    border-radius: 50%;
-    transition: transform 0.7s cubic-bezier(.32, .72, .28, 1.58);
-    transform-style: preserve-3d;
+  width: 100%;
+  border-radius: 50%;
+  transition: transform 0.7s cubic-bezier(.32, .72, .28, 1.58);
+  transform-style: preserve-3d;
 }
 
 .logo:hover #logo-img {
-    transform: rotateY(360deg);
+  transform: rotateY(360deg);
 }
 
 
 .info {
-    display: flex;
-    gap: 30px;
-    /* align-items: center; */
+  display: flex;
+  gap: 30px;
+  /* align-items: center; */
 
 }
 
 .info a {
-    font-size: 24px;
-    font-weight: 500;
-    text-decoration: none;
-    color: gray;
-    display: inline-block;
-    transition:
-        color 0.3s,
-        transform 0.3s,
-        text-decoration 0.3s;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: gray;
+  display: inline-block;
+  transition:
+    color 0.3s,
+    transform 0.3s,
+    text-decoration 0.3s;
 }
 
 .info a:hover {
-    color: white;
-    text-decoration: underline;
-    transform: scale(1.15);
+  color: white;
+  text-decoration: underline;
+  transform: scale(1.15);
 }
 
 .landing {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
 }
 
 .home-content {
-    max-width: 800px;
+  max-width: 800px;
 }
 
 .home-content h1 {
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.2;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .home-content h3 {
-    font-size: 32px;
-    font-weight: 700;
-    /* color: #00abf0; */
+  font-size: 32px;
+  font-weight: 700;
+  /* color: #00abf0; */
 }
 
 .home-content p {
-    font-size: 20px;
-    margin: 20px 0 40px;
+  font-size: 20px;
+  margin: 20px 0 40px;
 }
 
 .btn-box {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .btn-box button {
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
 }
 
 .hire-me {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 /* porfile card */
@@ -144,7 +145,7 @@ body {
   max-width: 400px;
   width: 400px;
   height: 560px;
-   margin: 150px 0px 100px 150px; 
+  margin: 150px 0px 100px 150px;
   background: white;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   border-radius: 26px;
@@ -171,7 +172,7 @@ body {
   width: 300px;
   border-radius: 50%;
   background-color: rgb(37, 34, 34);
-  margin: 0 auto 10px auto;  
+  margin: 0 auto 10px auto;
   overflow: hidden;
   z-index: 1;
 }
@@ -247,3 +248,5 @@ body {
 .buttons .connect:hover {
   background-color: gray;
 }
+
+/* skills */
