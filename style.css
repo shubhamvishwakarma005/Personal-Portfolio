@@ -185,10 +185,14 @@ body {
 .image .prof-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:cover;
   object-position: top;
   border-radius: 50%;
   border: 3px solid white;
+   /* filter: contrast(110%) saturate(120%); */
+   filter: contrast(110%) saturate(120%) drop-shadow(0 0 2px rgba(255,255,255,0.2));
+   object-position: center top;
+   /* object-position: 50% 20%; */
 }
 
 .pic-frame .text-data {
@@ -333,4 +337,17 @@ body {
   100% {
     transform: translateX(100%);
   }
+}
+
+
+/* Project */
+
+.proj-heading{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.proj-heading h1{
+  font-size: 3rem;
 }
