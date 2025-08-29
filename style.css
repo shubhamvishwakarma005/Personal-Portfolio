@@ -82,7 +82,6 @@ body {
 
 .info a:hover {
   color: white;
-  text-decoration: underline;
   transform: scale(1.15);
 }
 
@@ -152,6 +151,12 @@ body {
   padding: 25px;
   position: relative;
   border: 1px solid white;
+  /* transition: transform 2s; */
+}
+
+.pic-frame:hover {
+  cursor: pointer;
+  /* transform: rotateY(180deg); */
 }
 
 .pic-frame::before {
@@ -250,3 +255,82 @@ body {
 }
 
 /* skills */
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+.heading h1 {
+  font-size: 3rem;
+}
+
+
+#tools-heading {
+  font-size: 2em;
+  text-align: center;
+  margin: 4rem 0 2rem 0;
+  letter-spacing: 0.5px;
+}
+
+.track {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+   width: fit-content;
+  /* animation: scroll-left 20s linear infinite; */
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-box.right-to-left .track {
+  animation: scroll-left 20s linear infinite;
+}
+
+.marquee-box.left-to-right .track {
+  animation: scroll-right 20s linear infinite;
+}
+
+.item {
+  width: 18.75rem;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.item:hover img {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.item p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1.2rem;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
