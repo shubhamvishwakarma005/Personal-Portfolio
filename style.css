@@ -295,7 +295,7 @@ body {
 
 /* Message button (like LinkedIn message) */
 .connect.message-btn {
-    background-color: #000000; /* LinkedIn blue */
+    background-color: #000000; 
     color: white;
     border: 1px solid #ffffff;
 }
