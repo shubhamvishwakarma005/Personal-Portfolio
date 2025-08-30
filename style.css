@@ -323,6 +323,76 @@ body {
 }
 
 
+@media (max-width: 768px) {
+    /* Landing: stack content vertically */
+    .landing {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* Home content text smaller */
+    .home-content h1 {
+        font-size: 36px;
+    }
+    .home-content h3 {
+        font-size: 24px;
+    }
+    .home-content p {
+        font-size: 16px;
+    }
+
+    /* Profile card adjustments */
+    .pic-frame {
+        width: 90%;       /* fit screen */
+        max-width: 350px;
+        margin: 50px 0;   /* centered with some top/bottom spacing */
+        height: auto;     /* adjust height automatically */
+        padding: 20px;
+    }
+
+    .image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .name {
+        font-size: 22px;
+    }
+
+    .text-data .job {
+        font-size: 18px;
+    }
+
+    /* Buttons smaller */
+    .buttons .connect {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    /* Nav adjustments */
+    .nav {
+        left: 10px;
+        right: 10px;
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .info {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .info a {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
 /* skills */
 
 .heading {
