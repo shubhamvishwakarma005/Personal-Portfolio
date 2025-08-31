@@ -20,11 +20,21 @@ body {
     scroll-margin-top: 100px;
 }
 
+/* @media (max-width: 768px) {
+  #home,
+  #skills,
+  #projects,
+  #contact {
+    scroll-margin-top: 60px;
+  }
+} */
+
 
 .hero {
     width: 100%;
     padding-top: 150px;
 }
+
 
 .nav {
     position: fixed;
@@ -42,7 +52,6 @@ body {
     backdrop-filter: blur(8px);
 }
 
-
 .logo {
     width: 100px;
     border-radius: 50%;
@@ -55,8 +64,6 @@ body {
     border-color: white;
     box-shadow: 0 0 8px 2px white;
 }
-
-
 
 #logo-img {
     width: 100%;
@@ -96,11 +103,11 @@ body {
 
 .landing {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
 }
+
 
 .home-content {
     max-width: 800px;
@@ -323,76 +330,6 @@ body {
 }
 
 
-@media (max-width: 768px) {
-    /* Landing: stack content vertically */
-    .landing {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    /* Home content text smaller */
-    .home-content h1 {
-        font-size: 36px;
-    }
-    .home-content h3 {
-        font-size: 24px;
-    }
-    .home-content p {
-        font-size: 16px;
-    }
-
-    /* Profile card adjustments */
-    .pic-frame {
-        width: 90%;       /* fit screen */
-        max-width: 350px;
-        margin: 50px 0;   /* centered with some top/bottom spacing */
-        height: auto;     /* adjust height automatically */
-        padding: 20px;
-    }
-
-    .image {
-        width: 200px;
-        height: 200px;
-    }
-
-    .name {
-        font-size: 22px;
-    }
-
-    .text-data .job {
-        font-size: 18px;
-    }
-
-    /* Buttons smaller */
-    .buttons .connect {
-        padding: 6px 12px;
-        font-size: 12px;
-    }
-
-    /* Nav adjustments */
-    .nav {
-        left: 10px;
-        right: 10px;
-        height: auto;
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .info {
-        gap: 15px;
-        flex-wrap: wrap;
-    }
-
-    .info a {
-        font-size: 18px;
-    }
-}
-
-
-
-
-
 /* skills */
 
 .heading {
@@ -503,22 +440,6 @@ body {
     margin-top: 50px;
 }
 
-
-@media (max-width: 768px) {
-    .projects-section {
-        gap: 2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .projects-section {
-        gap: 1rem;
-        padding: 1rem;
-    }
-}
-
-
-
 .project {
     width: 300px;
     height: 350px;
@@ -587,4 +508,197 @@ body {
     background-color: black;
     border-top: 1px solid #333;
     margin-top: 80px;
+}
+
+
+/* responsive  */
+
+/* @media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    left: 10px;
+    right: 10px;
+    height: auto;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .info {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .info a {
+    font-size: 18px;
+  }
+
+  .home-content h1 {
+    font-size: 36px;
+  }
+
+  .home-content h3 {
+    font-size: 24px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+
+  .pic-frame {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    margin: 50px 0;
+    padding: 20px;
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .text-data .job {
+    font-size: 18px;
+  }
+
+  .buttons .connect {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .projects-section {
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .project {
+    width: 90%;
+    height: auto;
+  }
+} */
+
+ /* ///// */
+
+/* @media (max-width: 768px) {
+  .hero {
+    padding-top: 100px;
+  }
+
+  .home-content {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .btn-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    width: 14rem;
+  }
+
+  .track {
+    gap: 2rem;
+  }
+} */
+
+@media (max-width: 768px) {
+  #home, #skills, #projects, #contact {
+    scroll-margin-top: 60px;
+  }
+
+  .nav {
+    flex-direction: column;
+    left: 10px;
+    right: 10px;
+    height: auto;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .info {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .info a {
+    font-size: 18px;
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+
+  .home-content {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .home-content h1 {
+    font-size: 36px;
+  }
+
+  .home-content h3 {
+    font-size: 24px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+
+  .btn-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pic-frame {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    margin: 50px 0;
+    padding: 20px;
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .text-data .job {
+    font-size: 18px;
+  }
+
+  .buttons .connect {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .projects-section {
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .project {
+    width: 90%;
+    height: auto;
+  }
+
+  .item {
+    width: 14rem;
+  }
+
+  .track {
+    gap: 2rem;
+  }
 }
