@@ -103,7 +103,7 @@ body {
 
 .landing {
     display: flex;
-    flex-direction: column;
+    
     justify-content: center;
     align-items: center;
 }
@@ -151,7 +151,7 @@ body {
 
 .btn-box .btn:hover {
   transform: scale(1.05);
-  background-color: gray;
+  background-color: rgb(255, 0, 0);
   color: white;
   border-color: white;
 }
@@ -511,180 +511,134 @@ body {
 }
 
 
-/* responsive  */
-
-/* @media (max-width: 768px) {
+/* Tablet view (768px–1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
   .nav {
-    flex-direction: column;
-    left: 10px;
-    right: 10px;
-    height: auto;
-    gap: 10px;
+    left: 20px;
+    right: 20px;
     padding: 10px;
   }
 
-  .info {
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
+  .info a {
+    font-size: 20px;
   }
 
-  .info a {
-    font-size: 18px;
+  .landing {
+    flex-direction: column;
+    padding: 2rem 1rem;
   }
 
   .home-content h1 {
-    font-size: 36px;
+    font-size: 44px;
   }
 
   .home-content h3 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .home-content p {
-    font-size: 16px;
-  }
-
-  .pic-frame {
-    width: 90%;
-    max-width: 350px;
-    height: auto;
-    margin: 50px 0;
-    padding: 20px;
-  }
-
-  .image {
-    width: 200px;
-    height: 200px;
-  }
-
-  .name {
-    font-size: 22px;
-  }
-
-  .text-data .job {
     font-size: 18px;
   }
 
-  .buttons .connect {
-    padding: 6px 12px;
-    font-size: 12px;
-  }
-
-  .projects-section {
-    gap: 2rem;
-    padding: 1rem;
-  }
-
-  .project {
-    width: 90%;
-    height: auto;
-  }
-} */
-
- /* ///// */
-
-/* @media (max-width: 768px) {
-  .hero {
-    padding-top: 100px;
-  }
-
-  .home-content {
-    text-align: center;
-    padding: 0 1rem;
-  }
-
-  .btn-box {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .item {
-    width: 14rem;
+  .pic-frame {
+    margin: 60px auto;
   }
 
   .track {
-    gap: 2rem;
+    gap: 3rem;
   }
-} */
 
+  .projects-section {
+    gap: 3rem;
+  }
+}
+
+/* Mobile view (≤768px) */
 @media (max-width: 768px) {
-  #home, #skills, #projects, #contact {
-    scroll-margin-top: 60px;
-  }
-
   .nav {
     flex-direction: column;
-    left: 10px;
-    right: 10px;
+    align-items: center;
+    left: 0;
+    right: 0;
+    padding: 0.5rem;
     height: auto;
     gap: 10px;
-    padding: 10px;
   }
 
   .info {
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 12px;
     justify-content: center;
   }
 
   .info a {
-    font-size: 18px;
+    font-size: 16px;
   }
 
-  .hero {
-    padding-top: 100px;
-  }
-
-  .home-content {
+  .landing {
+    flex-direction: column;
     text-align: center;
-    padding: 0 1rem;
+    padding: 1rem;
   }
 
   .home-content h1 {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .home-content h3 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .home-content p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .btn-box {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
 
   .pic-frame {
     width: 90%;
-    max-width: 350px;
     height: auto;
-    margin: 50px 0;
+    margin: 40px auto;
     padding: 20px;
   }
 
   .image {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 
   .name {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .text-data .job {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .buttons .connect {
-    padding: 6px 12px;
+    padding: 6px 10px;
     font-size: 12px;
   }
 
+  .heading h1,
+  #proj-heading {
+    font-size: 2rem;
+  }
+
+  .track {
+    gap: 2rem;
+  }
+
+  .item {
+    width: 12rem;
+  }
+
   .projects-section {
+    flex-direction: column;
     gap: 2rem;
     padding: 1rem;
   }
@@ -694,11 +648,14 @@ body {
     height: auto;
   }
 
-  .item {
-    width: 14rem;
+  .card-front,
+  .card-back {
+    font-size: 1rem;
+    padding: 16px;
   }
 
-  .track {
-    gap: 2rem;
+  .footer {
+    font-size: 14px;
+    padding: 15px;
   }
 }
