@@ -511,50 +511,53 @@ body {
 }
 
 
-/* Tablet view (768px–1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .nav {
-    left: 20px;
-    right: 20px;
-    padding: 10px;
-  }
-
-  .info a {
-    font-size: 20px;
-  }
-
-  .landing {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-
-  .home-content h1 {
-    font-size: 44px;
-  }
-
-  .home-content h3 {
-    font-size: 28px;
-  }
-
-  .home-content p {
-    font-size: 18px;
-  }
-
-  .pic-frame {
-    margin: 60px auto;
-  }
-
-  .track {
-    gap: 3rem;
+/* ============ Responsive: Mobile ============ */
+@media (max-width: 768px) {
+  #proj-heading {
+    font-size: 2rem;
+    margin-top: 60px;
+    padding: 0 1rem;
+    text-align: center;
   }
 
   .projects-section {
-    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 30px;
   }
-}
 
-/* Mobile view (≤768px) */
-@media (max-width: 768px) {
+  .project {
+    width: 90%;
+    height: 320px;
+  }
+
+  .card-front,
+  .card-back {
+    padding: 16px;
+    font-size: 1rem;
+  }
+
+  .card-front h1,
+  .card-back h1 {
+    font-size: 1.3rem;
+  }
+
+  .card-back ul {
+    padding-left: 0;
+  }
+
+  .card-back ul li {
+    font-size: 1rem;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  /* Additional mobile fixes */
   .nav {
     flex-direction: column;
     align-items: center;
@@ -624,11 +627,6 @@ body {
     font-size: 12px;
   }
 
-  .heading h1,
-  #proj-heading {
-    font-size: 2rem;
-  }
-
   .track {
     gap: 2rem;
   }
@@ -636,26 +634,69 @@ body {
   .item {
     width: 12rem;
   }
+}
+
+
+/* ============ Responsive: Tablet ============ */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav {
+    left: 20px;
+    right: 20px;
+    padding: 10px;
+  }
+
+  .info a {
+    font-size: 20px;
+  }
+
+  .landing {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .home-content h1 {
+    font-size: 44px;
+  }
+
+  .home-content h3 {
+    font-size: 28px;
+  }
+
+  .home-content p {
+    font-size: 18px;
+  }
+
+  .pic-frame {
+    margin: 60px auto;
+  }
+
+  .track {
+    gap: 3rem;
+  }
 
   .projects-section {
-    flex-direction: column;
-    gap: 2rem;
-    padding: 1rem;
+    gap: 3rem;
+    padding: 2rem;
+    margin-top: 40px;
   }
 
   .project {
-    width: 90%;
-    height: auto;
+    width: 280px;
+    height: 340px;
   }
 
   .card-front,
   .card-back {
-    font-size: 1rem;
-    padding: 16px;
+    padding: 18px;
+    font-size: 1.1rem;
   }
 
-  .footer {
-    font-size: 14px;
-    padding: 15px;
+  .card-front h1,
+  .card-back h1 {
+    font-size: 1.4rem;
+  }
+
+  .card-back ul li {
+    font-size: 1.1rem;
   }
 }
